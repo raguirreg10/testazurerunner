@@ -15,3 +15,9 @@ jobs:
 
       - name: Run a one-line script
         run: sleep 120
+
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Run a one-line script
+        run: sleep 120
