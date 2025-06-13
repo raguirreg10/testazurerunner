@@ -14,16 +14,16 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: sleep 120
+        run: sleep 180
 
   deploy:
     runs-on: self-hosted
     steps:
       - name: Run a one-line script
-        run: sleep 120
+        run: sleep 180
 
   test:
     runs-on: self-hosted
     steps:
       - name: Run a one-line script
-        run: sleep 120
+        run: sleep 180
