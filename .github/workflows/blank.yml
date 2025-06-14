@@ -19,14 +19,24 @@ jobs:
       - name: Run a one-line script
         run: sleep 300
 
-  # deploy:
-  #   runs-on: self-hosted
-  #   steps:
-  #     - name: Run a one-line script
-  #       run: sleep 180
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
 
-  # test:
-  #   runs-on: self-hosted
-  #   steps:
-  #     - name: Run a one-line script
-  #       run: sleep 180
+      - name: Show ip
+        run: curl ifconfig.me
+
+      - name: Run a one-line script
+        run: sleep 300
+
+  test:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show ip
+        run: curl ifconfig.me
+
+      - name: Run a one-line script
+        run: sleep 300
