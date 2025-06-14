@@ -16,14 +16,14 @@ jobs:
       - name: Run a one-line script
         run: sleep 180
 
-  deploy:
-    runs-on: self-hosted
-    steps:
-      - name: Run a one-line script
-        run: sleep 180
+  # deploy:
+  #   runs-on: self-hosted
+  #   steps:
+  #     - name: Run a one-line script
+  #       run: sleep 180
 
-  test:
-    runs-on: self-hosted
-    steps:
-      - name: Run a one-line script
-        run: sleep 180
+  # test:
+  #   runs-on: self-hosted
+  #   steps:
+  #     - name: Run a one-line script
+  #       run: sleep 180
